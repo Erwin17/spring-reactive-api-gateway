@@ -1,25 +1,26 @@
 # spring-reactive-api-gateway
 
 ## Construir en Proyecto
-El proyecto tiene una configuracion especifica con gradle para que con una sola instruccion se puedan compilar todo los proyectos al mismo tiempo.
-Entonces, entando dentro del directorio principa basta con ejeuctar el siguiente comando:
-
+El proyecto tiene una configuración específica con Gradle para que, con una sola instrucción, se puedan compilar todos los proyectos al mismo tiempo.
+Entonces, estando dentro del directorio principal, basta con ejecutar el siguiente comando:
 ```
 ./gradlew build
 ```
-Y eso seria todo, tendriamos los microservicio compilados (jar) listo para ejecutar.
+Y eso seria todo, tendriamos los microservicio compilados **(jar)** y listo para ejecutar.
 
 ## Construir Imagen con Docker & Docker Compose
-Cada microservicio tiene un archivo Dockerfile el cual define como se construira la imagen del microservicio en base a dicho archivo (Dockerfile).
+Cada microservicio tiene un archivo **Dockerfile**, el cual define cómo se construirá la imagen del microservicio a partir de dicho archivo.
 
-En la raiz del proyecto hay un docker-compose el cual define los dos servicio que vamos a trabajar **[api gateway, product]**.
+En la raíz del proyecto hay un archivo docker-compose que define los dos servicios con los que vamos a trabajar. **[api gateway, product]**.
 
-Basta con estar en la raiz del directorio principal y ejecutar el siguinete commando:
+Basta con estar en la raíz del directorio principal y ejecutar el siguinete commando:
 
 ```
 docker compose build && docker compose up
 ```
 Y eso seria todo,  deberiamos ver los dos contenedores arriba y los servicios funcionando.
+
+## Consumir Servicios
 
 ### Obtener todos los productos
 ```
