@@ -1,4 +1,8 @@
 # spring-reactive-api-gateway
+Ejemplo básico de cómo construir un microservicio detrás de un API Gateway. 
+Esto comúnmente se conoce como el patrón Gateway, donde todas las solicitudes pasan por un enrutador, que en nuestro caso es nuestro API Gateway.
+
+Vale resaltar que tanto el **API Gateway** como el servicio de **Producto** estan construido bajo el paradicma reactivo.
 
 ## Construir en Proyecto
 El proyecto tiene una configuración específica con Gradle para que, con una sola instrucción, se puedan compilar todos los proyectos al mismo tiempo.
