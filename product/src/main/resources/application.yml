@@ -1,2 +1,3 @@
 server:
+  name: product
   port: 8081

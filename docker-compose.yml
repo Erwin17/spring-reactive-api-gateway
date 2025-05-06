@@ -1,0 +1,12 @@
+
+services:
+  product:
+    build: product
+    mem_limit: 512m
+    ports:
+      - "8081:8081"
+  gateway:
+    build: gateway
+    mem_limit: 512m
+    ports:
+      - "8080:8080"

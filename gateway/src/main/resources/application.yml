@@ -1,5 +1,5 @@
 sever:
-  name: "gateway"
+  name: gateway
   port: 8080
 
 management.endpoint.gateway.enabled: true
@@ -15,9 +15,6 @@ logging:
 spring.cloud.gateway.routes:
 
 - id: product
-  uri: http://localhost:8081/api
+  uri: http://product:8081/api
   predicates:
-    - Path=/api/**
-
----
-spring.config.activate.on-profile: docker
+    - Path=/**
